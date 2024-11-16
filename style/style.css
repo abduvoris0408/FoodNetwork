@@ -1,0 +1,509 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+:root {
+    --muted: rgba(21, 12, 1, 0.6);
+    --Roboto: Roboto;
+    --orange: rgba(220, 120, 11, 1);
+    --Philosopher: Philosopher;
+}
+.flex {
+    display: flex;
+}
+.row {
+    flex-direction: row;
+}
+.column {
+    flex-direction: column;
+}
+.items-center {
+    align-items: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+.nav-items {
+    list-style: none;
+    gap: 40px;
+}
+.navbar {
+    padding: 30px 0 10px 0;
+}
+nav {
+    position: sticky;
+    background-color: white;
+    top: 0;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+        rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+.nav-items li img {
+    width: 44px;
+    height: 43px;
+}
+.nav-items li a {
+    text-decoration: none;
+    color: var(--muted);
+    font-family: var(--Roboto);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: center;
+}
+.nav-items li a:hover {
+    color: var(--orange);
+    font-weight: 500;
+}
+.nav__btn {
+    width: 155px;
+    height: 46px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--orange);
+    color: rgba(255, 255, 255, 1);
+    padding: 14px 30px;
+    font-family: var(--Roboto);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+.nav__btn:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+.leftbar__title {
+    font-family: var(--Philosopher);
+    font-size: 48.83px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-align: left;
+}
+.leftbar__desc {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(21, 12, 1, 0.7);
+}
+.leftbar {
+    gap: 45px;
+}
+header {
+    margin-top: 16px;
+}
+.leftbar-btns {
+    gap: 30px;
+}
+.order-btn {
+    background-color: var(--orange);
+    width: 158px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: center;
+    color: white;
+}
+.food-btn {
+    background-color: white;
+    width: 158px;
+    height: 60px;
+    border-radius: 5px;
+    border: 1.5px solid rgba(220, 120, 11, 0.1);
+    outline: none;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: center;
+    color: var(--orange);
+}
+.features {
+    margin-top: 91px;
+}
+.feature-name {
+    font-family: var(--Roboto);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    color: rgba(220, 120, 11, 0.7);
+    text-transform: uppercase;
+}
+.feature-title {
+    font-family: var(--Philosopher);
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: center;
+    margin: 7px 0 44px 0;
+}
+.home-ellipse {
+    width: 88px;
+    height: 88px;
+    background-color: rgba(143, 166, 50, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-ellipse img {
+    width: 43px;
+    height: 43px;
+}
+.feature-card {
+    align-items: center;
+}
+.feature-cards {
+    gap: 90px;
+}
+.feature-card__title {
+    margin-top: 33px;
+    font-family: Philosopher;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+}
+.feature-card__desc {
+    margin-top: 15px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(21, 12, 1, 0.7);
+}
+.about {
+    margin-top: 124px;
+    gap: 97px;
+}
+.about-name {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    text-align: left;
+    color: rgba(220, 120, 11, 0.7);
+    text-transform: uppercase;
+}
+
+.about-title {
+    margin-top: 10px;
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 40.63px;
+    text-align: left;
+}
+.about-desc {
+    margin-top: 30px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(21, 12, 1, 0.7);
+}
+.about-btn {
+    width: 142px;
+    height: 42px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgba(220, 120, 11, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: center;
+    margin-top: 30px;
+}
+.menu {
+    margin-top: 116px;
+}
+.menu-top {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+.menu-name {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    color: rgba(220, 120, 11, 0.7);
+    text-transform: uppercase;
+    margin-bottom: 9px;
+}
+.menu-title {
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 24px;
+    color: rgba(21, 12, 1, 1);
+    margin-bottom: 25px;
+}
+.menu-desc {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(21, 12, 1, 0.7);
+    margin-bottom: 30px;
+}
+.menu-cards {
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+.menu-card {
+    width: 360px;
+    width: 360px;
+    height: 446px;
+    border-radius: 75px 10px 10px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.menu-content {
+    padding: 21px 25px;
+    gap: 20px;
+}
+.menu-cost p {
+    font-family: Philosopher;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.menu-content__desc {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(21, 12, 1, 0.7);
+}
+.add {
+    width: 36px;
+    height: 34px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(220, 120, 11, 1);
+    color: white;
+}
+.add img {
+    width: 12px;
+    height: 10.11px;
+}
+.fa-solid {
+    color: rgba(220, 120, 11, 1);
+    width: 16px;
+    height: 15.5px;
+}
+.stars i:last-child {
+    color: rgba(237, 237, 237, 0.7);
+}
+.menu-btn {
+    width: 142px;
+    height: 42px;
+    border: 1px solid rgba(220, 120, 11, 0.1);
+    margin-top: 50px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: center;
+    color: rgba(220, 120, 11, 1);
+    border-radius: 5px;
+    background-color: white;
+}
+.testimonial {
+    margin-top: 52px;
+}
+.testimonial-name {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    color: rgba(220, 120, 11, 0.7);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+.testimonial-title {
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 23px;
+}
+.test-description {
+    width: 750px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 73px;
+}
+.testimonial img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 42px;
+}
+.author-desc {
+    width: 506px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.author-name {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: center;
+    margin-top: 32px;
+}
+.author-job {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 6px;
+}
+#contact {
+    width: 100%;
+    height: 448px;
+    background-color: rgba(220, 120, 11, 0.1);
+    margin-top: 120px;
+}
+.contact-name {
+    margin-top: 120px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    color: rgba(220, 120, 11, 0.7);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.contact-title {
+    width: 749px;
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 40.6px;
+    text-align: center;
+    color: rgba(21, 12, 1, 1);
+    margin-bottom: 46px;
+}
+
+.form {
+    width: 750px;
+    height: 75px;
+    border-radius: 10px;
+    background-color: white;
+    padding-left: 5px;
+}
+.send-btn {
+    width: 156px;
+    height: 75px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    background-color: rgba(220, 120, 11, 1);
+    color: white;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 40.6px;
+    text-align: center;
+}
+input {
+    padding: 25px;
+    outline: none;
+    width: 60%;
+    border: none;
+}
+input::placeholder {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40.6px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+}
+footer {
+    width: 100%;
+    height: 429px;
+    background-color: rgba(37, 37, 37, 1);
+    padding: 120px 0;
+}
+.foter-item {
+    list-style: none;
+    gap: 20px;
+}
+.foter-item li {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.7);
+}
+.foter-item h6 {
+    font-family: Philosopher;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20.16px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.foter-bar {
+    list-style: none;
+    gap: 15px;
+}
+.foter-bar li a {
+    width: 25px;
+    height: 25px;
+    display: flex;
+}
